@@ -18,6 +18,5 @@ module.exports = withPlugins([
   {
     basePath: "/merrillkoshy",
     assetPrefix: "/merrillkoshy/",
-    env,
   },
 ]);
