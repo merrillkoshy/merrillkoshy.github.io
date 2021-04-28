@@ -13,15 +13,15 @@ export default function Home() {
 
         <a className={styles.circle}>
           <img
-            height="450"
-            width="450"
+            height="auto"
+            width="100%"
             src="/profile.png"
             alt="Merrill Koshy Thomas"
           />
         </a>
         <div className={` bg-white`}>
           <div className=" p-t-2 p-b-2">
-            <h1 className={`${styles.headBoard} p-t-2 m-b-3`}>
+            <h1 className={`${styles.headBoard} ml-5 mt-5 pt-2 pb-2`}>
               <a className={styles.regular} href="">
                 I'm a{" "}
                 <span className={styles.reveal} text={finalWords}>
