@@ -12,12 +12,11 @@ export default function Home() {
         <h1 className={styles.title}>Merrill Koshy Thomas</h1>
 
         <a className={styles.circle}>
-          <Image
+          <img
             height="450"
             width="450"
             src="/profile.png"
             alt="Merrill Koshy Thomas"
-            responsive={"true"}
           />
         </a>
         <div className={` bg-white`}>
