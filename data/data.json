@@ -1,0 +1,108 @@
+[
+	{
+		"United International Piping": [
+			"Website",
+			"/projects/united-international-piping.png",
+			"2021",
+			"https://www.unitedintlpipinggroupuk.com/"
+		]
+	},
+	{
+		"International Oilfield Supplies": [
+			"Website",
+			"/projects/ios-oman.png",
+			"2021",
+			"https://www.iosgroupoman.com/"
+		]
+	},
+	{
+		"United Piping Solutions": [
+			"Website",
+			"/projects/ups.png",
+			"2021",
+			"https://united-piping-solutions.vercel.app/"
+		]
+	},
+	{
+		"Gulf Motorcycles .com ": [
+			"Website",
+			"/projects/gmr.png",
+			"2021",
+			"https://www.gulfmotorcycles.com/"
+		]
+	},
+	{
+		"Gulf Motorcycles App ": [
+			"App",
+			"/projects/gmrapp.png",
+			"2021",
+			"https://www.gulfmotorcycles.com/"
+		]
+	},
+	{
+		"Sana'a Kayum ": [
+			"Website",
+			"/projects/sk.png",
+			"2020",
+			"https://www.sanaakayum.com/"
+		]
+	},
+	{
+		"Dot10 App ": ["App", "/projects/dtapp.png", "2019", "https://www.dot10.ae"]
+	},
+	{
+		"Ariana Nathan ": ["Website", "/projects/ariana.png", "2019", "#"]
+	},
+	{
+		"Diplomat's Summit App ": [
+			"App",
+			"/projects/dsapp.png",
+			"2019",
+			"https://diplomatssummit.com"
+		]
+	},
+	{
+		"Diplomat's Summit": [
+			"Website",
+			"/projects/ds.png",
+			"2018",
+			"https://diplomatssummit.com"
+		]
+	},
+	{
+		"The Label Sticks ": ["Website", "/projects/tls.png", "2018", "#"]
+	},
+	{
+		"Julian's Luxury ": ["Website", "/projects/julian.png", "2018", "#"]
+	},
+	{
+		"BuyDoBuy Advertising ": [
+			"Website",
+			"/projects/bdb.png",
+			"2017",
+			"http://www.bdbme.com/"
+		]
+	},
+	{
+		"Design Lab DXB ": ["Website", "/projects/dldxb.png", "2017", "#"]
+	},
+	{
+		"Marina Hotel Apartments": [
+			"Website",
+			"/projects/marina.png",
+			"2017",
+			"https://www.marinahotelapt.com/"
+		]
+	},
+	{
+		"Mercedez-Benz (Gargash) ": [
+			"Website",
+			"/projects/gargash.png",
+			"2017",
+			"http://amgclub.ae/"
+		]
+	},
+	{
+		"Dot10 ": ["Website", "/projects/dot10.png", "2017", "https://www.dot10.ae"]
+	}
+]

@@ -40,19 +40,48 @@
 	height: 200px;
 	width: 400px;
 }
+.displayApp img:hover,
+.displayWebsite img:hover,
+.displayApp img:focus,
+.displayWebsite img:focus {
+	box-shadow: -11px 20px 17px #bebebe, 20px -11px 17px #ffffff;
+	-webkit-transform: rotateZ(-1deg);
+	-moz-transform: rotateZ(-1deg);
+	transform: skew(2deg, 2deg);
+}
+
+.namePlates {
+	display: flex;
+	background: white;
+	width: 19vw;
+	margin-top: -3vh;
+	align-items: center;
+	justify-content: center;
+	padding: 0.5em;
+	border-radius: 10px;
+	border: 1px solid #00000045;
+	box-shadow: 0px 6px 10px #00000045;
+	background-image: linear-gradient(180deg, transparent 75%, #fcf113 0);
+	background-size: 0 100%;
+	background-repeat: no-repeat;
+	-webkit-transition: background-size 0.4s ease;
+}
 .displayApp {
 	height: 200px;
-	width: 100px;
+	width: 184px;
+	padding-left: 3rem;
+	padding-right: 3rem;
 }
 .displayConfigWebsite {
 	height: auto;
 	width: 100%;
-	border-radius: 30px;
+	max-width: 25vw;
+	border-radius: 10px;
 }
 .displayConfigApp {
 	height: auto;
 	width: 100%;
-	border-radius: 20px;
+	border-radius: 8px;
 }
 .title a {
 	color: #0070f3;
@@ -62,6 +91,30 @@
 	padding: 10px;
 	transform: translate3d(-50%, -50%, 0);
 }
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+	.displayConfigWebsite {
+		max-width: 95vw;
+	}
+	.namePlates {
+		width: 80vw;
+	}
+}
+
+@media all and (max-width: 480px) {
+	.displayConfigWebsite {
+		max-width: 95vw;
+	}
+	.namePlates {
+		width: 80vw;
+	}
+}
+
 .title a:hover,
 .title a:focus,
 .title a:active {
@@ -205,6 +258,7 @@ a.circle {
 	transition: background-size 0.4s ease;
 	animation: show-me 3s 9s forwards, shrinkmeMobile 2s 12s forwards;
 }
+.namePlates:hover,
 .regular:hover,
 .reveal:nth-child(1):hover,
 .regular:focus {

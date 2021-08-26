@@ -3,6 +3,8 @@ import Head from "next/head";
 import SmoothScroll from "../components/SmoothScroll";
 import Section from "../components/Section";
 import styles from "../styles/Home.module.css";
+import ImageCard from "../components/ImageCard";
+import projectData from "../data/data.json";
 
 export default function Home() {
 	const finalWords = "Full Stack | MERNstack | JAMstack developer";
@@ -169,13 +171,38 @@ export default function Home() {
 					</span>
 					{/* <SmoothScroll> */}
 					<div className="d-flex flex-row align-self-center justify-content-center text-center flex-wrap">
-						<div className={`d-flex flex-row m-5 ${styles.displayWebsite}`}>
+						{projectData &&
+							projectData?.map((data, i) => {
+								return <ImageCard key={i} data={data} />;
+							})}
+
+						{/* <div
+							className={`d-flex flex-row m-5 ${styles.displayWebsite} `}
+						>
+							<img
+								src="/projects/united-international-piping.png"
+								className={styles.displayConfigWebsite}
+							/>
+						</div>
+						<div
+							className={`d-flex flex-row m-5 ${styles.displayWebsite}`}
+						>
+							<img
+								src="/projects/ios-oman.png"
+								className={styles.displayConfigWebsite}
+							/>
+						</div>
+						<div
+							className={`d-flex flex-row m-5 ${styles.displayWebsite}`}
+						>
 							<img
 								src="/projects/ups.png"
 								className={styles.displayConfigWebsite}
 							/>
 						</div>
-						<div className={`d-flex flex-row m-5 ${styles.displayWebsite}`}>
+						<div
+							className={`d-flex flex-row m-5 ${styles.displayWebsite}`}
+						>
 							<img
 								src="/projects/gmr.png"
 								className={styles.displayConfigWebsite}
@@ -187,7 +214,9 @@ export default function Home() {
 								className={styles.displayConfigApp}
 							/>
 						</div>
-						<div className={`d-flex flex-row m-5 ${styles.displayWebsite}`}>
+						<div
+							className={`d-flex flex-row m-5 ${styles.displayWebsite}`}
+						>
 							<img
 								src="/projects/sk.png"
 								className={styles.displayConfigWebsite}
@@ -205,60 +234,78 @@ export default function Home() {
 								className={styles.displayConfigApp}
 							/>
 						</div>
-						<div className={`d-flex flex-row m-5 ${styles.displayWebsite}`}>
+						<div
+							className={`d-flex flex-row m-5 ${styles.displayWebsite}`}
+						>
 							<img
 								src="/projects/ds.png"
 								className={styles.displayConfigWebsite}
 							/>
 						</div>
-						<div className={`d-flex flex-row m-5 ${styles.displayWebsite}`}>
+						<div
+							className={`d-flex flex-row m-5 ${styles.displayWebsite}`}
+						>
 							<img
 								src="/projects/dot10.png"
 								className={styles.displayConfigWebsite}
 							/>
 						</div>
-						<div className={`d-flex flex-row m-5 ${styles.displayWebsite}`}>
+						<div
+							className={`d-flex flex-row m-5 ${styles.displayWebsite}`}
+						>
 							<img
 								src="/projects/dldxb.png"
 								className={styles.displayConfigWebsite}
 							/>
 						</div>
-						<div className={`d-flex flex-row m-5 ${styles.displayWebsite}`}>
+						<div
+							className={`d-flex flex-row m-5 ${styles.displayWebsite}`}
+						>
 							<img
 								src="/projects/tls.png"
 								className={styles.displayConfigWebsite}
 							/>
 						</div>
-						<div className={`d-flex flex-row m-5 ${styles.displayWebsite}`}>
+						<div
+							className={`d-flex flex-row m-5 ${styles.displayWebsite}`}
+						>
 							<img
 								src="/projects/ariana.png"
 								className={styles.displayConfigWebsite}
 							/>
 						</div>
-						<div className={`d-flex flex-row m-5 ${styles.displayWebsite}`}>
+						<div
+							className={`d-flex flex-row m-5 ${styles.displayWebsite}`}
+						>
 							<img
 								src="/projects/julian.png"
 								className={styles.displayConfigWebsite}
 							/>
 						</div>
-						<div className={`d-flex flex-row m-5 ${styles.displayWebsite}`}>
+						<div
+							className={`d-flex flex-row m-5 ${styles.displayWebsite}`}
+						>
 							<img
 								src="/projects/bdb.png"
 								className={styles.displayConfigWebsite}
 							/>
 						</div>
-						<div className={`d-flex flex-row m-5 ${styles.displayWebsite}`}>
+						<div
+							className={`d-flex flex-row m-5 ${styles.displayWebsite}`}
+						>
 							<img
 								src="/projects/marina.png"
 								className={styles.displayConfigWebsite}
 							/>
 						</div>
-						<div className={`d-flex flex-row m-5 ${styles.displayWebsite}`}>
+						<div
+							className={`d-flex flex-row m-5 ${styles.displayWebsite}`}
+						>
 							<img
 								src="/projects/gargash.png"
 								className={styles.displayConfigWebsite}
 							/>
-						</div>
+						</div> */}
 					</div>
 					{/* </SmoothScroll> */}
 				</div>
