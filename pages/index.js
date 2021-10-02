@@ -1,5 +1,5 @@
 import Head from "next/head";
-
+import Link from "next/link";
 import SmoothScroll from "../components/SmoothScroll";
 import Section from "../components/Section";
 import styles from "../styles/Home.module.css";
@@ -140,24 +140,46 @@ export default function Home() {
 
 			<main className={styles.main}>
 				<Intro />
-				{/* <Section content={<Intro />} /> */}
-				{/* <Section flexDirection="row" />
-          <Section flexDirection="row-reverse" /> */}
+
 				<span
 					className="d-flex flex-row align-self-center justify-content-start flex-wrap py-5 mt-5"
 					width={"100%"}
 				>
-					<div>
+					<div className="container p-5">
+						<p
+							style={{
+								fontStyle: "italic",
+								textAlign: "justify",
+							}}
+						>
+							<strong>Hi!</strong> I'm an Engineering graduate, self-taught
+							frontend developer, educated with backend development and
+							integrated APIs and NoSQL databases. As a full stack JavaScript
+							developer, I have deployed over 20 projects over a course of 5
+							years with ReactJS, NextJS, NodeJS, ExpressJS and MongoDB using
+							Redux & Redis, clean code with TypeScript, Jest & Enzyme, CI/CD
+							with TravisCI, Github & Vercel, authentication with JWT,
+							Cross-Platform app development using React Native and Firebase.
+						</p>
 						<a className={styles.regular}> {`<{sw?.dev}/> to me:`}</a>
 						<ul>
 							<li className={styles.listedMe}>I believe in JAMstack</li>
 							<li className={styles.listedMe}>
-								Every aspect of Software Development should be modular.
+								Every aspect of Software Development should be modular. Thanks
+								D3!
 							</li>
-							<li
-								className={styles.listedMe}
-							>{`Inventing the Wheel ⏭️  NextJS`}</li>
-							<li className={styles.listedMe}>No SQLs; only NoSQLs</li>
+							<li className={styles.listedMe}>
+								{`Inventing the Wheel ⏭️ `}&#160;{`NextJS`}
+							</li>
+							<li className={styles.listedMe}>
+								{`VSCode +`}
+								&#160;
+								{` TS + `}
+								&#160;
+								{`☕ = `}
+								&#160;
+								{`❤️`}
+							</li>
 							<li className={styles.listedMe}>
 								Bye Kotlin, Swift. Invest in cross-platform JS !
 							</li>
@@ -175,137 +197,51 @@ export default function Home() {
 							projectData?.map((data, i) => {
 								return <ImageCard key={i} data={data} />;
 							})}
-
-						{/* <div
-							className={`d-flex flex-row m-5 ${styles.displayWebsite} `}
-						>
-							<img
-								src="/projects/united-international-piping.png"
-								className={styles.displayConfigWebsite}
-							/>
+						<div className="d-flex flex-column mt-3">
+							<div className="d-flex flex-column  mt-3">
+								<aside>
+									Ah, I wish I could show you all as some of them are under lock
+									and key 🤐{" "}
+								</aside>
+								<aside>
+									Let's meet up, I can explain what I did for the 👽{" "}
+								</aside>
+							</div>
+							<div className="d-flex flex-column mt-3 align-items-left">
+								<Link href="https://www.linkedin.com/in/merrill-koshy-thomas/">
+									<a
+										style={{
+											fontSize: "30px",
+										}}
+									>
+										<span
+											style={{
+												color: "#004182",
+											}}
+										>
+											<strong>LinkedIn</strong>
+										</span>{" "}
+										: /in/merrill-koshy-thomas
+									</a>
+								</Link>
+								<Link href="mailto:merrillkoshy@gmail.com">
+									<a
+										style={{
+											fontSize: "30px",
+										}}
+									>
+										<span
+											style={{
+												color: "#de5246",
+											}}
+										>
+											<strong>Gmail</strong>
+										</span>{" "}
+										: merrillkoshy@gmail.com
+									</a>
+								</Link>
+							</div>
 						</div>
-						<div
-							className={`d-flex flex-row m-5 ${styles.displayWebsite}`}
-						>
-							<img
-								src="/projects/ios-oman.png"
-								className={styles.displayConfigWebsite}
-							/>
-						</div>
-						<div
-							className={`d-flex flex-row m-5 ${styles.displayWebsite}`}
-						>
-							<img
-								src="/projects/ups.png"
-								className={styles.displayConfigWebsite}
-							/>
-						</div>
-						<div
-							className={`d-flex flex-row m-5 ${styles.displayWebsite}`}
-						>
-							<img
-								src="/projects/gmr.png"
-								className={styles.displayConfigWebsite}
-							/>
-						</div>
-						<div className={`d-flex flex-row m-5 ${styles.displayApp}`}>
-							<img
-								src="/projects/gmrapp.png"
-								className={styles.displayConfigApp}
-							/>
-						</div>
-						<div
-							className={`d-flex flex-row m-5 ${styles.displayWebsite}`}
-						>
-							<img
-								src="/projects/sk.png"
-								className={styles.displayConfigWebsite}
-							/>
-						</div>
-						<div className={`d-flex flex-row m-5 ${styles.displayApp}`}>
-							<img
-								src="/projects/dtapp.png"
-								className={styles.displayConfigApp}
-							/>
-						</div>
-						<div className={`d-flex flex-row m-5 ${styles.displayApp}`}>
-							<img
-								src="/projects/dsapp.png"
-								className={styles.displayConfigApp}
-							/>
-						</div>
-						<div
-							className={`d-flex flex-row m-5 ${styles.displayWebsite}`}
-						>
-							<img
-								src="/projects/ds.png"
-								className={styles.displayConfigWebsite}
-							/>
-						</div>
-						<div
-							className={`d-flex flex-row m-5 ${styles.displayWebsite}`}
-						>
-							<img
-								src="/projects/dot10.png"
-								className={styles.displayConfigWebsite}
-							/>
-						</div>
-						<div
-							className={`d-flex flex-row m-5 ${styles.displayWebsite}`}
-						>
-							<img
-								src="/projects/dldxb.png"
-								className={styles.displayConfigWebsite}
-							/>
-						</div>
-						<div
-							className={`d-flex flex-row m-5 ${styles.displayWebsite}`}
-						>
-							<img
-								src="/projects/tls.png"
-								className={styles.displayConfigWebsite}
-							/>
-						</div>
-						<div
-							className={`d-flex flex-row m-5 ${styles.displayWebsite}`}
-						>
-							<img
-								src="/projects/ariana.png"
-								className={styles.displayConfigWebsite}
-							/>
-						</div>
-						<div
-							className={`d-flex flex-row m-5 ${styles.displayWebsite}`}
-						>
-							<img
-								src="/projects/julian.png"
-								className={styles.displayConfigWebsite}
-							/>
-						</div>
-						<div
-							className={`d-flex flex-row m-5 ${styles.displayWebsite}`}
-						>
-							<img
-								src="/projects/bdb.png"
-								className={styles.displayConfigWebsite}
-							/>
-						</div>
-						<div
-							className={`d-flex flex-row m-5 ${styles.displayWebsite}`}
-						>
-							<img
-								src="/projects/marina.png"
-								className={styles.displayConfigWebsite}
-							/>
-						</div>
-						<div
-							className={`d-flex flex-row m-5 ${styles.displayWebsite}`}
-						>
-							<img
-								src="/projects/gargash.png"
-								className={styles.displayConfigWebsite}
-							/>
-						</div> */}
 					</div>
 					{/* </SmoothScroll> */}
 				</div>
