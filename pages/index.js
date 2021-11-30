@@ -1,13 +1,12 @@
-import Head from "next/head";
-import Link from "next/link";
-import SmoothScroll from "../components/SmoothScroll";
-import Section from "../components/Section";
-import styles from "../styles/Home.module.css";
-import ImageCard from "../components/ImageCard";
-import projectData from "../data/data.json";
+import Head from "next/head"
+import Link from "next/link"
+import { saveAs } from "file-saver"
+import styles from "../styles/Home.module.css"
+import ImageCard from "../components/ImageCard"
+import projectData from "../data/data.json"
 
 export default function Home() {
-	const finalWords = "Full Stack | MERNstack | JAMstack developer";
+	const finalWords = "Full Stack | MERNstack | JAMstack developer 👨🏻‍💻"
 	const Intro = () => {
 		return (
 			<>
@@ -54,8 +53,11 @@ export default function Home() {
 					</h6>
 				</div>
 			</>
-		);
-	};
+		)
+	}
+	const saveFile = () => {
+		saveAs("/Merrill-Web-developer.pdf", "Merrill-Web-developer.pdf")
+	}
 	return (
 		<div className={styles.container}>
 			<Head>
@@ -142,7 +144,7 @@ export default function Home() {
 				<Intro />
 
 				<span
-					className="d-flex flex-row align-self-center justify-content-start flex-wrap py-5 mt-5"
+					className="d-flex flex-row align-self-center justify-content-start flex-wrap pt-5 py-2 mt-5"
 					width={"100%"}
 				>
 					<div className="container p-5">
@@ -153,20 +155,35 @@ export default function Home() {
 							}}
 						>
 							<strong>Hi!</strong> I'm an Engineering graduate, self-taught
-							frontend developer, educated with backend development and
-							integrated APIs and NoSQL databases. As a full stack JavaScript
-							developer, I have deployed over 20 projects over a course of 5
-							years with ReactJS, NextJS, NodeJS, ExpressJS and MongoDB using
-							Redux & Redis, clean code with TypeScript, Jest & Enzyme, CI/CD
-							with TravisCI, Github & Vercel, authentication with JWT,
-							Cross-Platform app development using React Native and Firebase.
+							frontend developer, educated with backend development, built APIs
+							and works with NoSQL databases. As a full stack JavaScript
+							developer, I have deployed over 20 projects over a course of{" "}
+							<strong>5 years</strong> with ReactJS, NextJS, NodeJS, ExpressJS
+							and MongoDB using Redux, GraphQL & Redis, clean code with
+							TypeScript, Jest & Enzyme, CI/CD with TravisCI, Github & Vercel,
+							authentication with JWT, Cross-Platform app development using
+							React Native and Firebase.
+						</p>
+						<p
+							style={{
+								fontStyle: "italic",
+								textAlign: "justify",
+							}}
+						>
+							Over the years, I have worked in a small team, a startup, as a
+							freelancer (an entrepreneur attempt) and in an MNC (PwC). With
+							this varied experience, I have doned a lot of caps ranging from
+							being a graphic designer, a 3D modeler, the guy who sets up your
+							computer, cables and emails to managing the whole department and
+							developing apps used by millions with the government!
 						</p>
 						<a className={styles.regular}> {`<{sw?.dev}/> to me:`}</a>
 						<ul>
-							<li className={styles.listedMe}>I believe in JAMstack</li>
 							<li className={styles.listedMe}>
-								Every aspect of Software Development should be modular. Thanks
-								D3!
+								I believe in JAMstack. We choose the best tools per usecase 💪🏽
+							</li>
+							<li className={styles.listedMe}>
+								Modular. Label and organize your thoughts to code. 🤓
 							</li>
 							<li className={styles.listedMe}>
 								{`Inventing the Wheel ⏭️ `}&#160;{`NextJS`}
@@ -181,12 +198,20 @@ export default function Home() {
 								{`❤️`}
 							</li>
 							<li className={styles.listedMe}>
-								Bye Kotlin, Swift. Invest in cross-platform JS !
+								Why Native x2? Go{" "}
+								<span style={{ fontStyle: "italic" }}>React</span> Native!
+							</li>
+							<li className={styles.listedMe}>
+								The ecstacy of being a creator 😎
 							</li>
 						</ul>
 					</div>
 				</span>
-
+				<div className="d-flex flex-column py-5">
+					<button className={styles.button} onClick={saveFile}>
+						My Résumé
+					</button>
+				</div>
 				<div className="d-flex flex-column">
 					<span className="d-flex flex-row align-self-center justify-content-center text-center flex-wrap">
 						<a className={styles.regular}> My Projects</a>
@@ -195,55 +220,53 @@ export default function Home() {
 					<div className="d-flex flex-row align-self-center justify-content-center text-center flex-wrap">
 						{projectData &&
 							projectData?.map((data, i) => {
-								return <ImageCard key={i} data={data} />;
+								return <ImageCard key={i} data={data} />
 							})}
-						<div className="d-flex flex-column mt-3">
-							<div className="d-flex flex-column  mt-3">
-								<aside>
-									Ah, I wish I could show you all as some of them are under lock
-									and key 🤐{" "}
-								</aside>
-								<aside>
-									Let's meet up, I can explain what I did for the 👽{" "}
-								</aside>
-							</div>
-							<div className="d-flex flex-column mt-3 align-items-left">
-								<Link href="https://www.linkedin.com/in/merrill-koshy-thomas/">
-									<a
-										style={{
-											fontSize: "30px",
-										}}
-									>
-										<span
-											style={{
-												color: "#004182",
-											}}
-										>
-											<strong>LinkedIn</strong>
-										</span>{" "}
-										: /in/merrill-koshy-thomas
-									</a>
-								</Link>
-								<Link href="mailto:merrillkoshy@gmail.com">
-									<a
-										style={{
-											fontSize: "30px",
-										}}
-									>
-										<span
-											style={{
-												color: "#de5246",
-											}}
-										>
-											<strong>Gmail</strong>
-										</span>{" "}
-										: merrillkoshy@gmail.com
-									</a>
-								</Link>
-							</div>
-						</div>
 					</div>
 					{/* </SmoothScroll> */}
+				</div>
+				<div className="d-flex flex-column mt-3">
+					<div className="d-flex flex-column  mt-3">
+						<aside>
+							Ah, I wish I could show you all as some of them are under lock and
+							key 🤐{" "}
+						</aside>
+						<aside>Let's meet up, I can explain what I did for the 👽 </aside>
+					</div>
+					<div className="d-flex flex-column mt-3 align-items-left">
+						<Link href="https://www.linkedin.com/in/merrill-koshy-thomas/">
+							<a
+								style={{
+									fontSize: "30px",
+								}}
+							>
+								<span
+									style={{
+										color: "#004182",
+									}}
+								>
+									<strong>LinkedIn</strong>
+								</span>{" "}
+								: /in/merrill-koshy-thomas
+							</a>
+						</Link>
+						<Link href="mailto:merrillkoshy@gmail.com">
+							<a
+								style={{
+									fontSize: "30px",
+								}}
+							>
+								<span
+									style={{
+										color: "#de5246",
+									}}
+								>
+									<strong>Gmail</strong>
+								</span>{" "}
+								: merrillkoshy@gmail.com
+							</a>
+						</Link>
+					</div>
 				</div>
 			</main>
 
@@ -256,5 +279,5 @@ export default function Home() {
 				</a>
 			</footer>
 		</div>
-	);
+	)
 }
