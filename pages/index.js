@@ -217,7 +217,7 @@ export default function Home() {
 						<a className={styles.regular}> My Projects</a>
 					</span>
 					{/* <SmoothScroll> */}
-					<div className="d-flex flex-row align-self-center justify-content-center text-center flex-wrap">
+					<div className="d-flex flex-row align-self-center justify-content-center text-center flex-wrap px-5 mx-5">
 						{projectData &&
 							projectData?.map((data, i) => {
 								return <ImageCard key={i} data={data} />
@@ -225,46 +225,90 @@ export default function Home() {
 					</div>
 					{/* </SmoothScroll> */}
 				</div>
-				<div className="d-flex flex-column mt-3">
-					<div className="d-flex flex-column  mt-3">
+				<div className="d-flex flex-column mt-3 px-5">
+					<div className="d-flex flex-column mt-3">
 						<aside>
 							Ah, I wish I could show you all as some of them are under lock and
 							key 🤐{" "}
 						</aside>
 						<aside>Let's meet up, I can explain what I did for the 👽 </aside>
 					</div>
-					<div className="d-flex flex-column mt-3 align-items-left">
+					<div className="d-flex flex-column mt-5 align-items-left">
 						<Link href="https://www.linkedin.com/in/merrill-koshy-thomas/">
-							<a
+							<div
+								className="d-flex justify-content-between"
 								style={{
 									fontSize: "30px",
 								}}
 							>
-								<span
+								<div
+									className="d-flex flex-column"
 									style={{
 										color: "#004182",
 									}}
 								>
 									<strong>LinkedIn</strong>
-								</span>{" "}
-								: /in/merrill-koshy-thomas
-							</a>
+								</div>{" "}
+								<div
+									className="d-flex flex-column"
+									style={{
+										cursor: "pointer",
+									}}
+								>
+									merrill-koshy-thomas
+								</div>
+							</div>
 						</Link>
 						<Link href="mailto:merrillkoshy@gmail.com">
-							<a
+							<div
+								className="d-flex justify-content-between"
 								style={{
 									fontSize: "30px",
 								}}
 							>
-								<span
+								<div
+									className="d-flex flex-column"
 									style={{
 										color: "#de5246",
 									}}
 								>
 									<strong>Gmail</strong>
-								</span>{" "}
-								: merrillkoshy@gmail.com
-							</a>
+								</div>{" "}
+								<div
+									className="d-flex flex-column"
+									style={{
+										cursor: "pointer",
+									}}
+								>
+									merrillkoshy@gmail.com
+								</div>
+							</div>
+						</Link>
+						<Link href="https://github.com/merrillkoshy">
+							<div
+								className="d-flex justify-content-between"
+								style={{
+									fontSize: "30px",
+								}}
+							>
+								<div
+									className="d-flex flex-column"
+									style={{
+										color: "#333",
+									}}
+								>
+									<strong>Github</strong>
+								</div>{" "}
+								<div
+									className="d-flex flex-column"
+									style={{
+										cursor: "pointer",
+									}}
+								>
+									{" "}
+									merrillkoshy
+								</div>
+							</div>
 						</Link>
 					</div>
 				</div>

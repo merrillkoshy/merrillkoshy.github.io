@@ -32,7 +32,10 @@
 		]
 	},
 	{
-		"Gulf Motorcycles .com ": [
+		"MarketPlace UAE": ["Website", "/projects/marketplace.png", "2021", "#"]
+	},
+	{
+		"Gulf Motorcycles Web": [
 			"Website",
 			"/projects/gmr.png",
 			"2021",
@@ -40,7 +43,7 @@
 		]
 	},
 	{
-		"Gulf Motorcycles App ": [
+		"Gulf Motorcycles Mobile ": [
 			"App",
 			"/projects/gmrapp.png",
 			"2021",
