@@ -25,7 +25,7 @@ const Modal = ({
 	return (
 		<div
 			className={`modal fade ${show ? "show" : ""}`}
-			id={title.replaceAll(" ", "")}
+			id={title.replace(/\s/g, "")}
 			tabIndex={-1}
 			role="dialog"
 			data-backdrop={show}

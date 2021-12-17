@@ -35,7 +35,7 @@ const ImageCard = ({
 					data-backdrop={show}
 					data-show={show}
 					data-focus={show}
-					data-target={`#${title.replaceAll(" ", "")}`}
+					data-target={`#${title.replace(/\s/g, "")}`}
 					onClick={() => {
 						setShow(true)
 					}}
@@ -58,7 +58,7 @@ const ImageCard = ({
 				data-backdrop={show}
 				data-show={show}
 				data-focus={show}
-				data-target={`#${title.replaceAll(" ", "")}`}
+				data-target={`#${title.replace(/\s/g, "")}`}
 				onClick={() => {
 					setShow(true)
 				}}
