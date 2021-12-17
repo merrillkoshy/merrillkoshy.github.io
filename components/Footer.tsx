@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-const Footer = ({ styles }) => {
+const Footer = ({ styles }: { styles: any }) => {
 	return (
 		<div className="d-flex flex-column mt-5 align-items-left">
 			<Link href="https://www.linkedin.com/in/merrill-koshy-thomas/">
