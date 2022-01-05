@@ -46,6 +46,9 @@ const ImageCard = ({
 					<img
 						src={details.source}
 						className={styles[`displayConfig${details.type}`]}
+						alt={title}
+						loading="lazy"
+						title={title}
 					/>
 				</div>
 			) : (

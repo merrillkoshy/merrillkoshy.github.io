@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { saveAs } from "file-saver"
 import styles from "./Home.module.css"
 import ImageCard from "../components/ImageCard"
@@ -9,14 +9,14 @@ import About from "../components/About"
 import Meta from "../components/Meta"
 import { Data } from "../types"
 
+import * as ga from "../lib/ga"
+
 export default function Home() {
-	// const [loaded, setLoaded] = useState(<></>)
-	// useEffect(() => {
-	// 	if (navigator) {
-	// 		console.log(navigator)
-	// 		setLoaded(<Scroller styles={styles} />)
-	// 	}
-	// }, [])
+	useEffect(() => {
+		if (typeof window) {
+			ga.pageview(window.location.href)
+		}
+	}, [])
 	const saveFile = () => {
 		saveAs("/Merrill-FS-developer.pdf", "Merrill-FS-developer.pdf")
 	}
