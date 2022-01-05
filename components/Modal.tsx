@@ -80,6 +80,9 @@ const Modal = ({
 									<img
 										src={content.source}
 										className={styles[`displayConfig${content.type}`]}
+										alt={title}
+										loading="lazy"
+										title={title}
 									/>
 								</div>
 								<div className="d-flex flex-column px-2 justify-content-evenly">

@@ -75,6 +75,7 @@ export default Meta = () => {
 				href="/favicon/favicon-16x16.png"
 			/>
 			<link rel="manifest" href="/manifest.json" />
+			<link rel="canonical" href="https://merrillkoshy.github.io" />
 			<meta name="msapplication-TileColor" content="#ffffff" />
 			<meta
 				name="msapplication-TileImage"
