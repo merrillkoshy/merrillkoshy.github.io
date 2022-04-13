@@ -18,7 +18,7 @@ const About = ({ styles }: { styles: any }) => {
 					MongoDB using Redux, GraphQL & Redis, clean code with TypeScript, Jest
 					& Enzyme, CI/CD with TravisCI, Github & Vercel, authentication with
 					JWT, Cross-Platform app development using React Native and Firebase,
-					for the past <strong>5+ years</strong> .
+					for the past <strong>6 years</strong> .
 				</p>
 				<p
 					style={{
