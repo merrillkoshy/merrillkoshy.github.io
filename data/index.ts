@@ -2,8 +2,21 @@ import { Data } from "../types"
 
 const data: Data[] = [
 	{
+		"Incomlend & LCLite": {
+			type: "WebApp",
+			source: "/projects/lclite.png",
+			year: 2022,
+			url: "https://marketplace.lclite.com",
+			details: `Incomlend and LCLite FinTech Platform tooling. Tasked with Software Architecture Rationalisation, developing the component library required to be used in both platforms. 
+			• Squad collaboration using Slack and management using JIRA.
+			• Engineered along with 2 other developers in a cross-functional team of 10, based in the parent company in Singapore.
+			• Created a tooling division dedicated to delivering isolated, versatile and highly performant React component package library, thereby reducing platform Front-End development time and effort and increasing platform FMP by approximately 30%.
+			• Development Stack: ReactJS TypeScript| Storybook and JSDoc | ESLint | Webpack and RollupJS | NPM and GitLab.`,
+		},
+	},
+	{
 		"TAMM Abu Dhabi": {
-			type: "Website",
+			type: "WebApp",
 			source: "/projects/tamm.png",
 			year: 2021,
 			url: "https://www.tamm.abudhabi",
@@ -54,7 +67,7 @@ const data: Data[] = [
 	},
 	{
 		"MarketPlace UAE": {
-			type: "Website",
+			type: "WebApp",
 			source: "/projects/marketplace.png",
 			year: 2021,
 			url: "#",
@@ -78,7 +91,7 @@ const data: Data[] = [
 	},
 	{
 		"Gulf Motorcycles Admin Panel": {
-			type: "Website",
+			type: "WebApp",
 			source: "/projects/gmradmin.png",
 			year: 2021,
 			url: "https://www.gulfmotorcycles.com/admin",
@@ -103,7 +116,7 @@ const data: Data[] = [
 	},
 	{
 		"Sana'a Kayum ": {
-			type: "Website",
+			type: "WebApp",
 			source: "/projects/sk.png",
 			year: 2020,
 			url: "https://www.sanaakayum.com",
@@ -216,11 +229,11 @@ const data: Data[] = [
 	},
 	{
 		"Mercedez-Benz (Gargash) ": {
-			type: "Website",
+			type: "WebApp",
 			source: "/projects/gargash.png",
 			year: 2017,
 			url: "https://www.gargashonlineshop.com",
-			details: `* A bilingual ecommerce website for the prestigious Mercedez-Benz's lifestyle accessories.
+			details: `* A bilingual ecommerce webapp for the prestigious Mercedez-Benz's lifestyle accessories.
 			* Development using Vanilla JS & WordPress PHP
 			`,
 		},

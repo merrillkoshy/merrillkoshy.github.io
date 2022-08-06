@@ -20,8 +20,23 @@
 	text-indent: -0.7rem;
 	padding-left: 2rem;
 }
-.listedMe::marker {
+.listedMe:first-child::marker {
+	content: "💪🏽 ";
+}
+.listedMe:nth-child(2)::marker {
+	content: "🤓 ";
+}
+.listedMe:nth-child(3)::marker {
 	content: "⚛️ ";
+}
+.listedMe:nth-child(4)::marker {
+	content: "🔋 ";
+}
+.listedMe:nth-child(5)::marker {
+	content: "📱 ";
+}
+.listedMe:last-child::marker {
+	content: "✨ ";
 }
 .footer {
 	width: 100%;
@@ -41,14 +56,14 @@
 	justify-content: center;
 	align-items: center;
 }
-.displayWebsite {
+.displayWebsite, .displayWebApp {
 	height: 200px;
 	width: 400px;
 }
 .displayApp img:hover,
-.displayWebsite img:hover,
+.displayWebsite img:hover, .displayWebApp img:hover,
 .displayApp img:focus,
-.displayWebsite img:focus {
+.displayWebsite img:focus, .displayWebApp img:focus {
 	box-shadow: -11px 20px 17px #bebebe, 20px -11px 17px #ffffff;
 	-webkit-transform: rotateZ(-1deg);
 	-moz-transform: rotateZ(-1deg);
@@ -83,6 +98,12 @@
 	max-width: 25vw;
 	border-radius: 10px;
 }
+.displayConfigWebApp {
+	height: auto;
+	width: 100%;
+	max-width: 25vw;
+	border-radius: 10px;
+}
 .displayConfigApp {
 	height: auto;
 	width: 100%;
@@ -103,7 +124,7 @@
 }
 
 @media all and (min-width: 480px) and (max-width: 768px) {
-	.displayConfigWebsite {
+	.displayConfigWebsite, .displayConfigWebApp {
 		max-width: 95vw;
 	}
 	.namePlates {
@@ -112,7 +133,7 @@
 }
 
 @media all and (max-width: 480px) {
-	.displayConfigWebsite {
+	.displayConfigWebsite, .displayConfigWebApp {
 		max-width: 95vw;
 	}
 	.namePlates {

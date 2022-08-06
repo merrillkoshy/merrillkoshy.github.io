@@ -14,11 +14,12 @@ const About = ({ styles }: { styles: any }) => {
 					developer, educated with backend development, built APIs and works
 					with NoSQL databases. Having deployed{" "}
 					<strong>over 20 projects</strong> as a full stack JavaScript
-					developer, I have worked with ReactJS, NextJS, NodeJS, ExpressJS and
-					MongoDB using Redux, GraphQL & Redis, clean code with TypeScript, Jest
-					& Enzyme, CI/CD with TravisCI, Github & Vercel, authentication with
-					JWT, Cross-Platform app development using React Native and Firebase,
-					for the past <strong>6 years</strong> .
+					developer, I have worked with primarily ReactJS, NextJS, NodeJS,
+					ExpressJS and MongoDB using Redux, GraphQL & Redis, clean code with
+					TypeScript, Jest & Enzyme, CI/CD with TravisCI, Github & Vercel, NPM
+					packaging and component library development, authentication with JWT,
+					Cross-Platform app development using React Native and Firebase, for
+					the past <strong>6+ years</strong> .
 				</p>
 				<p
 					style={{
@@ -27,19 +28,19 @@ const About = ({ styles }: { styles: any }) => {
 					}}
 				>
 					In this journey, I have worked in a small team, a startup, as a
-					freelancer (an entrepreneur attempt) and in an MNC (PwC). With this
-					varied experience, I have doned a lot of caps ranging from being a
-					graphic designer, a 3D modeler, the guy who sets up your computer,
-					cables and emails to managing the whole department and developing apps
-					used by millions with the government!
+					freelancer (an entrepreneur attempt) and in MNCs. With this varied
+					experience, I have doned a lot of caps ranging from being a graphic
+					designer, a 3D modeler, the guy who sets up your computer, cables and
+					emails to managing the whole department and developing apps used by
+					millions with the government!
 				</p>
 				<a className={styles.regular}> {`<{sw?.dev}/> to me:`}</a>
 				<ul>
 					<li className={styles.listedMe}>
-						I believe in JAMstack. We choose the best tools per usecase 💪🏽
+						JAMstack. We choose the best tools per usecase.
 					</li>
 					<li className={styles.listedMe}>
-						Modular. Label and organize your thoughts to code. 🤓
+						Modular. Document your thoughts to code.
 					</li>
 					<li className={styles.listedMe}>
 						{`Inventing the Wheel ⏭️ `}&#160;{`NextJS`}
@@ -54,10 +55,10 @@ const About = ({ styles }: { styles: any }) => {
 						{`❤️`}
 					</li>
 					<li className={styles.listedMe}>
-						Why Native x2? Go <span style={{ fontStyle: "italic" }}>React</span>{" "}
-						Native!
+						Going <span style={{ fontStyle: "italic" }}>React</span> Native
+						rather than Native x 2.
 					</li>
-					<li className={styles.listedMe}>The ecstacy of being a creator 😎</li>
+					<li className={styles.listedMe}>The ecstacy of being a creator</li>
 				</ul>
 			</div>
 		</span>
