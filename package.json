@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@types/file-saver": "^2.0.4",
-    "@types/react": "^17.0.37",
+    "@types/react": "18.0.1",
     "@types/react-typing-effect": "^2.0.2",
     "bootstrap": "^4.6.0",
     "file-saver": "^2.0.5",
