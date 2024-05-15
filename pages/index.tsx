@@ -26,7 +26,7 @@ export default function Home() {
       <Meta />
 
       <main className={styles.main}>
-        <Intro styles={styles} />
+        <Intro />
         <q className="blockquote">
           Many hats. One passion. Stackin' it up since 2016.
         </q>
@@ -36,7 +36,7 @@ export default function Home() {
             My Résumé
           </button>
         </div>
-        <About styles={styles} />
+        <About />
         <div className="d-flex flex-column">
           <span className="d-flex flex-row align-self-center justify-content-center text-center flex-wrap">
             <a className={styles.regular}>My Projects</a>
@@ -45,7 +45,7 @@ export default function Home() {
           <div className="d-flex flex-row align-self-center justify-content-center text-center flex-wrap px-5 mx-5">
             {projectData &&
               projectData?.map((data: Data, i: number) => (
-                <ImageCard key={i} data={data} styles={styles} />
+                <ImageCard key={i} data={data} />
               ))}
           </div>
           {/* </SmoothScroll> */}
