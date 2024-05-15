@@ -1,4 +1,4 @@
-import styles from "pages/Home.module.css";
+import styles from "pages/home.module.css";
 import ReactTypingEffect from "react-typing-effect";
 
 const Intro = () => {
