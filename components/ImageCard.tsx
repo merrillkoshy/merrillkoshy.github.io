@@ -1,4 +1,4 @@
-import styles from "pages/Home.module.css";
+import styles from "pages/home.module.css";
 import { useState } from "react";
 import { Data } from "../types";
 import Modal from "./Modal";
