@@ -1,4 +1,6 @@
-const About = ({ styles }: { styles: any }) => {
+import styles from "pages/Home.module.css";
+
+const About = () => {
   return (
     <span className="d-flex flex-row align-self-center justify-content-start flex-wrap py-2">
       <div className="container p-5">

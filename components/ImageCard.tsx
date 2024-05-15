@@ -1,14 +1,13 @@
+import styles from "pages/Home.module.css";
 import { useState } from "react";
 import { Data } from "../types";
 import Modal from "./Modal";
 
-const ImageCard = ({
-  data,
-  styles,
-}: {
+interface ImageCardProps {
   data: Data;
-  styles: any;
-}): JSX.Element => {
+}
+
+const ImageCard = ({ data }: ImageCardProps): JSX.Element => {
   const details = Object.values(data)[0];
   const title = Object.keys(data)[0];
   const [show, setShow] = useState(false);
