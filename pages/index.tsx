@@ -39,7 +39,7 @@ export default function Home() {
         <About styles={styles} />
         <div className="d-flex flex-column">
           <span className="d-flex flex-row align-self-center justify-content-center text-center flex-wrap">
-            <a className={styles.regular}> My Projects</a>
+            <a className={styles.regular}>My Projects</a>
           </span>
           {/* <SmoothScroll> */}
           <div className="d-flex flex-row align-self-center justify-content-center text-center flex-wrap px-5 mx-5">
