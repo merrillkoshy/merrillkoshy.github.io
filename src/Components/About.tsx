@@ -1,7 +1,7 @@
 function About() {
   return (
     <div className="max-w-4xl mx-auto mt-5">
-      <p className="text-base text-left md:text-center text-gray-600 leading-relaxed mt-4 italic">
+      <p className="text-base text-left md:text-center text-gray-600 leading-relaxed mt-4 italic dark:text-vscode-comment">
         Hi! I'm an Engineering graduate, self-taught frontend developer,
         educated with backend development, built APIs and works with NoSQL
         databases. Having deployed over 20 projects as a full stack JavaScript
@@ -12,7 +12,7 @@ function About() {
         Cross-Platform app development using React Native and Firebase, for the
         past 8 years .
       </p>
-      <p className="text-base text-left md:text-center text-gray-600 leading-relaxed mt-4 italic">
+      <p className="text-base text-left md:text-center text-gray-600 leading-relaxed mt-4 italic dark:text-vscode-comment">
         In this journey, I have worked in a small team, a startup, as a
         freelancer (an entrepreneur attempt) and in MNCs. With this varied
         experience, I have doned a lot of caps ranging from being a graphic
