@@ -17,7 +17,7 @@ function App() {
   });
 
   return (
-    <div className="min-h-screen py-10 px-3 sm:px-5">
+    <div className="min-h-screen py-10 px-3 sm:px-5 dark:bg-app-dark rounded">
       <div data-aos="fade-down" data-aos-duration="800">
         <Card name={data.name} social={data.social} />
       </div>
