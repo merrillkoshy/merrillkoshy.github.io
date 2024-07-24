@@ -11,9 +11,12 @@ function Footer({
 }) {
   return (
     <div className="text-center w-full mt-16">
-      <p className="text-gray-600 mb-4 dark:text-vscode-green">
-        // Ah, I wish I could show you all as some of them are under lock and
-        key 🤐 Let's meet up, I can explain what I did for the 👽
+      <p className="text-vscode-light-statusBarItem.errorBackground mb-4 dark:text-vscode-green font-bold dark:font-normal">
+        {`{* Ah, I wish I could show you all as some of them are under lock and
+        key 🤐`}
+      </p>
+      <p className="text-vscode-light-statusBarItem.errorBackground mb-4 dark:text-vscode-green font-bold dark:font-normal">
+        {`Let's meet up, I can explain what I did for the 👽 *}`}
       </p>
       <div className="flex align-center justify-center mt-4">
         <a
