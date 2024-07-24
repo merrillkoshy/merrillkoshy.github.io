@@ -4,7 +4,7 @@ import { GiPuzzle } from "react-icons/gi";
 import { SiExpress } from "react-icons/si";
 
 const BOOTSTRAP_FOR_SKILL_ICON =
-  "text-4xl mx-auto inline-block text-typescript";
+  "text-4xl mx-auto inline-block text-typescript dark:text-vscode-green";
 const data: {
   name: string;
 
@@ -76,7 +76,8 @@ const data: {
   projects: [
     {
       title: "Incomlend",
-      description: "FinTech Platform architecture, development & tooling.",
+      description:
+        "FinTech Platform architecture, development & tooling - Incomlend supports global trade by giving access to working capital to SMEs around the world. The platform is an intuitive PWA, offering users a real-time update on their trade financing application.",
       tags: [
         "ReactJS",
         "TypeScript",
@@ -94,7 +95,8 @@ const data: {
     },
     {
       title: "LCLite",
-      description: "Web3 FinTech Platform tooling.",
+      description:
+        "Web3 FinTech Platform tooling - LC Lite is a blockchain-enabled platform digitizing global trade receivables finance through a unique token-powered transaction mechanism",
       tags: [
         "ReactJS",
         "TypeScript",
@@ -128,21 +130,24 @@ const data: {
     },
     {
       title: "United International Piping",
-      description: "A NextJS project styled with SCSS.",
+      description:
+        "A NextJS project styled with SCSS - Providing piping solutions worldwide.",
       tags: ["NextJS", "React-Bootstrap", "SCSS", "Redux RTK"],
       link: "https://www.unitedintlpipinggroupuk.com/",
       source: "/projects/united-international-piping.png",
     },
     {
       title: "International Oilfield Supplies",
-      description: "A NextJS project styled with SCSS.",
+      description:
+        "A NextJS project styled with SCSS - Providing oilfield supplies worldwide.",
       tags: ["NextJS", "React-Bootstrap", "SCSS", "Redux RTK"],
       link: "https://www.iosgroupoman.com",
       source: "/projects/ios-oman.png",
     },
     {
       title: "United Piping Solutions",
-      description: "A NextJS project styled with SCSS.",
+      description:
+        "A NextJS project styled with SCSS - Providing piping solutions worldwide.",
       tags: ["NextJS", "React-Bootstrap", "SCSS", "Redux RTK"],
       link: "https://www.united-piping-solutions.vercel.com/",
       source: "/projects/ups.png",
@@ -173,7 +178,8 @@ const data: {
     },
     {
       title: "Gulf Motorcycles Web",
-      description: "A NextJS project styled with SCSS.",
+      description:
+        "A NextJS project styled with SCSS - A business ideation offering affordable motorcycle services online",
       tags: [
         "NextJS",
         "React-Bootstrap",
@@ -189,7 +195,7 @@ const data: {
     {
       title: "Gulf Motorcycles Admin Panel",
       description:
-        "A PWA built with NextJS, styled with SCSS and backed by Firebase services.",
+        "A PWA built with NextJS, styled with SCSS and backed by Firebase services - Distinctive admin panel for managing the Gulf Motorcycles business",
       tags: [
         "NextJS",
         "React-Bootstrap",
@@ -204,7 +210,8 @@ const data: {
     },
     {
       title: "Gulf Motorcycles Mobile",
-      description: "Cross-Platform Mobile App.",
+      description:
+        "Cross-Platform Mobile App built with React Native and Expo SDK - A mobile app for the Gulf Motorcycles business",
       tags: [
         "React-Native",
         "Expo SDK",
@@ -218,7 +225,8 @@ const data: {
     },
     {
       title: "Sana'a Kayum",
-      description: "An E-Commerce PWA using MERN and JAMstack.",
+      description:
+        "An E-Commerce PWA using MERN and JAMstack - A fashion store for the young and trendy, primarily focussing on modest wear.",
       tags: [
         "NextJS",
         "GatsbyJS",
@@ -238,22 +246,16 @@ const data: {
     },
     {
       title: "Dot10 App",
-      description: "A Project management tool initially made in Kotlin.",
+      description:
+        "A mobile project management tool made in Kotlin - Managing advertising projects across UAE.",
       tags: ["React Native", "Firebase"],
       link: "https://www.dot10.com",
       source: "/projects/dtapp.png",
     },
     {
-      title: "Ariana Nathan",
-      description: "A portfolio website developed for the young talent Ariana.",
-      tags: ["Wordpress PHP"],
-      link: "#",
-      source: "/projects/ariana.png",
-    },
-    {
       title: "Diplomat's Summit App",
       description:
-        "An app to view and register the latest diplomat events in UAE.",
+        "A mobile app (Android) to view and register the latest diplomat events in UAE.",
       tags: ["Kotlin"],
       link: "https://diplomatssummit.com",
       source: "/projects/dsapp.png",

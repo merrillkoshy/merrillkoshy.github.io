@@ -18,11 +18,11 @@ function Card({
   return (
     <div className="w-full">
       <div className="text-center mb-10">
-        <p className="text-2xl md:text-4xl font-bold text-center text-vscode-yellow">
+        <p className="font-mono text-2xl md:text-5xl font-bold text-center text-typescript dark:text-vscode-yellow">
           {name}
         </p>
       </div>
-      <div className="flex flex-col justify-center max-w-xs mx-auto bg-white rounded-xl p-5 dark:bg-vscode-background ">
+      <div className="flex flex-col justify-center max-w-md mx-auto bg-white rounded-xl p-5 dark:bg-vscode-background ">
         <div className="">
           <img
             className="border-4 border-gelb w-32 mx-auto shadow-xl rounded-full hover:transition-transform ease-in-out duration-500 hover:rounded-md hover:scale-150 hover:border-8 hover:border-typescript"
@@ -37,6 +37,7 @@ function Card({
               speed={50}
               eraseDelay={500}
               eraseSpeed={50}
+              className="font-mono text-xl font-semibold text-center text-typescript dark:text-vscode-yellow mb-6"
               text={[
                 "Full Stack Developer",
                 "MERNstack Developer",
@@ -74,13 +75,13 @@ function Card({
             </a>
           </div>
           <div className="flex align-center justify-center mt-4">
-            <q className="blockquote dark:text-vscode-green">
+            <q className="font-mono blockquote dark:text-vscode-green">
               Many hats. One passion. Stackin' it up since 2016.
             </q>
           </div>
           <div className="d-flex flex-column py-5">
             <button
-              className="rounded bg-typescript text-white text-2xl font-[800] p-2 px-4 hover:bg-typescript-dark transition-colors duration-300 hover:scale-125 hover:transition ease-in-out hover:text-3xl"
+              className="font-mono rounded bg-typescript text-white text-2xl font-[800] p-2 px-4 hover:bg-typescript-dark transition-colors duration-300 hover:scale-125 hover:transition ease-in-out hover:text-3xl"
               onClick={saveFile}
             >
               My Résumé
