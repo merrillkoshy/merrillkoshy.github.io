@@ -1,10 +1,14 @@
 import SkillCard from "./Card/Skill";
 
-function Skills({
-  skills,
-}: {
-  skills: { skillName: string; skillIcon: JSX.Element }[];
-}) {
+interface Skill {
+  skillName: string;
+  skillIcon: JSX.Element;
+}
+interface SkillsProps {
+  skills: Skill[];
+}
+
+function Skills({ skills }: SkillsProps) {
   return (
     <div className="flex flex-col sm:flex-row align-center justify-center max-w-xl mx-auto mt-8 gap-2">
       {skills.map((skill) => {
