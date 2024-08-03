@@ -5,9 +5,9 @@ import { SiExpress } from "react-icons/si";
 
 const BOOTSTRAP_FOR_SKILL_ICON =
   "text-4xl mx-auto inline-block text-typescript dark:text-vscode-green";
-const data: {
-  name: string;
 
+interface IData {
+  name: string;
   social: {
     github: string;
     linkedin: string;
@@ -28,7 +28,9 @@ const data: {
     link: string;
     source: string;
   }[];
-} = {
+}
+
+const data: IData = {
   name: "Merrill Koshy Thomas",
 
   social: {

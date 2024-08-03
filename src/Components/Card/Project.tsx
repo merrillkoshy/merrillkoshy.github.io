@@ -1,16 +1,18 @@
 import { FaExternalLinkAlt } from "react-icons/fa";
 
+interface Project {
+  title: string;
+  description: string;
+  tags: string[];
+  link: string;
+  source: string;
+}
+interface ProjectProps {
+  project: Project;
+}
 const ProjectCard = ({
   project: { title, description, tags, link, source },
-}: {
-  project: {
-    title: string;
-    description: string;
-    tags: string[];
-    link: string;
-    source: string;
-  };
-}) => {
+}: ProjectProps) => {
   const IS_MOBILE_APP = description?.toLowerCase()?.includes("mobile");
   return (
     <div className="group w-full m-4 mx-auto p-6 rounded-xl border-2 border-gray-300">

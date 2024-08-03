@@ -1,17 +1,15 @@
 import { FaGithub, FaLinkedin, FaRegEnvelope } from "react-icons/fa";
 
-function Footer({
-  github,
-  linkedin,
-  mail,
-}: {
+interface FooterProps {
   github: string;
   linkedin: string;
   mail: string;
-}) {
+}
+
+function Footer({ github, linkedin, mail }: FooterProps) {
   return (
     <div className="text-center w-full mt-16">
-      <p className="text-vscode-light-statusBarItem.errorBackground mb-4 dark:text-vscode-green font-bold dark:font-normal">
+      <p className="font-mono text-vscode-light-statusBarItem.errorBackground mb-4 dark:text-vscode-green font-bold dark:font-normal">
         {`{* Ah, I wish I could show you all as some of them are under lock and
         key 🤐`}
       </p>

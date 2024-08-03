@@ -1,16 +1,17 @@
 import ProjectCard from "./Card/Project";
 
-const Projects = ({
-  projects,
-}: {
-  projects: {
-    title: string;
-    description: string;
-    tags: string[];
-    link: string;
-    source: string;
-  }[];
-}) => {
+interface Project {
+  title: string;
+  description: string;
+  tags: string[];
+  link: string;
+  source: string;
+}
+interface ProjectsProps {
+  projects: Project[];
+}
+
+const Projects = ({ projects }: ProjectsProps) => {
   return (
     <div>
       <h1 className="font-mono mt-8 text-2xl md:text-4xl text-center font-extrabold mb-5">
