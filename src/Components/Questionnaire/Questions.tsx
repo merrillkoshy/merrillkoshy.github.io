@@ -6,7 +6,7 @@ const Questions: React.FC = () => {
 
   const [selectedOption, setSelectedOption] = React.useState<string>();
 
-  const handleOptionChange = (questionId: string, option: string) => {
+  const handleOptionChange = (option: string) => {
     setSelectedOption(option);
   };
 
@@ -37,9 +37,7 @@ const Questions: React.FC = () => {
                     type="checkbox"
                     className="form-checkbox h-5 w-5 text-blue-500"
                     checked={selectedOption === option?.option}
-                    onChange={() =>
-                      handleOptionChange(question.id, option?.option)
-                    }
+                    onChange={() => handleOptionChange(option?.option)}
                   />
                   <span className="ml-2">{option?.option}</span>
                 </div>
