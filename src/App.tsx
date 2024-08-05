@@ -1,13 +1,14 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
-import About from "./Components/About";
-import Card from "./Components/Card";
-import Footer from "./Components/Footer";
-import Projects from "./Components/Projects";
-import Skills from "./Components/Skills";
-import data from "./profiledata";
+import Layout from "./layout";
+import DeutscLernenLayout from "./layout/deutschlernenpage";
+import Deutsch from "./pages/deutsch";
+import Lehrer from "./pages/deutsch/lehrer";
+import Student from "./pages/deutsch/student";
+import Profile from "./pages/profile";
 
 function App() {
   useEffect(() => {
@@ -17,21 +18,18 @@ function App() {
   });
 
   return (
-    <div className="min-h-screen py-10 lg:px-3 sm:px-5 dark:bg-app-dark rounded">
-      <div data-aos="fade-down" data-aos-duration="800">
-        <Card name={data.name} social={data.social} />
-      </div>
-      <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-        <About />
-        <Skills skills={data.skills} />
-        <Projects projects={data.projects} />
-        <Footer
-          github={data.social.github}
-          linkedin={data.social.linkedin}
-          mail={data.social.email}
-        />
-      </div>
-    </div>
+    <Router>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<Profile />} />
+          <Route element={<DeutscLernenLayout />}>
+            <Route path="/deutsch" element={<Deutsch />} />
+            <Route path="/deutsch/lehrer" element={<Lehrer />} />
+            <Route path="/deutsch/student" element={<Student />} />
+          </Route>
+        </Route>
+      </Routes>
+    </Router>
   );
 }
 

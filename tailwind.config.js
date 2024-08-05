@@ -478,6 +478,11 @@ export default {
           "widget.border": "#e5e5e5",
         },
       },
+      deutsch: {
+        schwarz: "#000000",
+        rot: "#DD0000",
+        gold: "#FFCC00",
+      },
     },
     extend: {
       width: {
