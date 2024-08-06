@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
 import Layout from "./layout";
+import AuthenticatedPagesLayout from "./layout/authenticatedpages";
 import DeutscLernenLayout from "./layout/deutschlernenpage";
 import Deutsch from "./pages/deutsch";
 import Lehrer from "./pages/deutsch/lehrer";
@@ -24,6 +25,8 @@ function App() {
           <Route path="/" element={<Profile />} />
           <Route element={<DeutscLernenLayout />}>
             <Route path="/deutsch" element={<Deutsch />} />
+          </Route>
+          <Route element={<AuthenticatedPagesLayout />}>
             <Route path="/deutsch/lehrer" element={<Lehrer />} />
             <Route path="/deutsch/student" element={<Student />} />
           </Route>

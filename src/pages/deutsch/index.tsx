@@ -2,6 +2,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import "../../App.css";
+import Login from "./login";
 
 function Deutsch() {
   useEffect(() => {
@@ -12,7 +13,7 @@ function Deutsch() {
 
   return (
     <div className="min-h-screen py-10 px-5 bg-deutsch-gold rounded">
-      <h2 className="text-lg font-bold mb-4">Ich bin ein:</h2>
+      {/* <h2 className="text-lg font-bold mb-4">Ich bin ein:</h2>
       <div className="flex items-center justify-center gap-2">
         <button
           className="bg-red-500 hover:bg-red-800 text-white font-bold py-2 px-4 rounded-md"
@@ -26,7 +27,8 @@ function Deutsch() {
         >
           Student
         </button>
-      </div>
+      </div> */}
+      <Login />
     </div>
   );
 }
