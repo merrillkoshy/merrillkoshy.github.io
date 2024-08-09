@@ -5,6 +5,7 @@ import "../../App.css";
 import About from "../../Components/About";
 import Card from "../../Components/Card";
 import Footer from "../../Components/Footer";
+import Languages from "../../Components/Languages";
 import Projects from "../../Components/Projects";
 import Skills from "../../Components/Skills";
 import data from "../../profiledata";
@@ -25,6 +26,7 @@ function Profile() {
         <About />
         <Skills skills={data.skills} />
         <Projects projects={data.projects} />
+        <Languages languages={data.languages} />
         <Footer
           github={data.social.github}
           linkedin={data.social.linkedin}

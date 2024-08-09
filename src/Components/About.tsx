@@ -1,7 +1,7 @@
 function About() {
   return (
     <div className="max-w-4xl mx-auto mt-5">
-      <p className="font-mono font-semibold text-base text-left md:text-center text-vscode-light-statusBarItem.errorBackground leading-relaxed mt-4 dark:text-vscode-comment">
+      <p className="font-mono font-semibold text-base text-left md:text-justify text-vscode-light-statusBarItem.errorBackground leading-relaxed mt-4 dark:text-vscode-comment">
         Hi! I'm an Engineering graduate, self-taught Frontend developer,
         educated with Backend development, built APIs, and worked with NoSQL
         databases. Having deployed over 20 projects as a full-stack JavaScript
@@ -12,7 +12,7 @@ function About() {
         with JWT, Cross-Platform app development using React Native and
         Firebase, for the past 8 years.
       </p>
-      <p className="font-mono font-semibold text-base text-left md:text-center text-vscode-light-statusBarItem.errorBackground leading-relaxed mt-4 dark:text-vscode-comment">
+      <p className="font-mono font-semibold text-base text-left md:text-justify text-vscode-light-statusBarItem.errorBackground leading-relaxed mt-4 dark:text-vscode-comment">
         In this journey, I have worked in a small team, a startup, as a
         freelancer (an entrepreneur attempt) and in MNCs - in 🇮🇳India, 🇦🇪UAE &
         🇸🇬Singapore. With this varied experience, I have doned a lot of caps

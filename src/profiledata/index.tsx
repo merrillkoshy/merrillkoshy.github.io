@@ -1,10 +1,17 @@
 import { DiMongodb } from "react-icons/di";
-import { FaCode, FaNode, FaPalette, FaReact } from "react-icons/fa";
+import {
+  FaCode,
+  FaMobile,
+  FaNode,
+  FaPalette,
+  FaPython,
+  FaReact,
+} from "react-icons/fa";
 import { GiPuzzle } from "react-icons/gi";
-import { SiExpress } from "react-icons/si";
+import { SiExpress, SiPostgresql } from "react-icons/si";
 
 const BOOTSTRAP_FOR_SKILL_ICON =
-  "text-4xl mx-auto inline-block text-typescript dark:text-vscode-green";
+  "text-3xl mx-auto inline-block text-typescript dark:text-vscode-green";
 
 interface IData {
   name: string;
@@ -27,6 +34,14 @@ interface IData {
     tags: string[];
     link: string;
     source: string;
+  }[];
+  languages: {
+    name: string;
+    description: string;
+    proficiency: string;
+    certification: string;
+    issuer?: string;
+    icon?: string;
   }[];
 }
 
@@ -59,6 +74,19 @@ const data: IData = {
     {
       skillName: "NodeJS",
       skillIcon: <FaNode className={BOOTSTRAP_FOR_SKILL_ICON} />,
+    },
+
+    {
+      skillName: "FastAPI",
+      skillIcon: <FaPython className={BOOTSTRAP_FOR_SKILL_ICON} />,
+    },
+    {
+      skillName: "Postgres",
+      skillIcon: <SiPostgresql className={BOOTSTRAP_FOR_SKILL_ICON} />,
+    },
+    {
+      skillName: "React Native",
+      skillIcon: <FaMobile className={BOOTSTRAP_FOR_SKILL_ICON} />,
     },
     {
       skillName: "Frontend",
@@ -273,7 +301,7 @@ const data: IData = {
     {
       title: "The Label Sticks",
       description:
-        "A PR website focussing on differend brands and its ambassadors worldwide.",
+        "A PR website focussing on brands and its ambassadors worldwide.",
       tags: ["Vanilla JS", "JavaScript ReactJS"],
       link: "#",
       source: "/projects/tls.png",
@@ -324,6 +352,31 @@ const data: IData = {
       tags: ["Vanilla JS"],
       link: "https://www.dot10.ae",
       source: "/projects/dot10.png",
+    },
+  ],
+  languages: [
+    {
+      name: "English",
+      description: "CEFR C1 : IELTS 7.5",
+      proficiency: "Full Professional Proficiency",
+      certification: "/certificates/IELTS_CEFR_C1.pdf",
+      issuer: "IDP",
+      icon: "🇬🇧",
+    },
+    {
+      name: "Deutsch",
+      description: "CEFR A1",
+      proficiency: "Basic",
+      certification: "/certificates/254b247311b3c58caa83790722f1d148.pdf",
+      issuer: "Busuu",
+      icon: "🇩🇪",
+    },
+    {
+      name: "Malayalam",
+      description: "Native",
+      proficiency: "Fluent",
+      certification: "NA",
+      icon: "🇮🇳",
     },
   ],
 };

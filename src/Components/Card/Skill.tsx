@@ -5,9 +5,9 @@ interface SkillCardProps {
 
 const SkillCard = ({ skillName, skillIcon }: SkillCardProps) => {
   return (
-    <div className="m-4 lg:w-40 md:w-1 flex-none mx-auto text-center p-5 rounded-xl border-2 border-gray-300">
+    <div className="m-4 leading-0 w-32 flex-none text-center p-2 px-0 rounded-xl border-2 border-gray-300">
       {skillIcon}
-      <p className="font-mono lg:text-sm md:text-lg font-semibold mt-4 dark:text-vscode-yellow">
+      <p className="font-mono lg:text-xs md:text-lg font-semibold dark:text-vscode-yellow">
         {skillName}
       </p>
     </div>

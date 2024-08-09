@@ -16,7 +16,7 @@ const ProjectCard = ({
   const IS_MOBILE_APP = description?.toLowerCase()?.includes("mobile");
   return (
     <div className="group w-full m-4 mx-auto p-6 rounded-xl border-2 border-gray-300">
-      <a href={link}>
+      <a href={link} target="_blank">
         <h1 className="font-mono text-xl text-center font-bold text-typescript">
           {title} <FaExternalLinkAlt className="inline align-baseline" />
         </h1>

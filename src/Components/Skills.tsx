@@ -10,16 +10,18 @@ interface SkillsProps {
 
 function Skills({ skills }: SkillsProps) {
   return (
-    <div className="flex flex-col sm:flex-row align-center justify-center max-w-xl mx-auto mt-8 gap-2">
-      {skills.map((skill) => {
-        return (
-          <SkillCard
-            skillName={skill.skillName}
-            skillIcon={skill.skillIcon}
-            key={skill.skillName}
-          />
-        );
-      })}
+    <div className="max-w-4xl mx-auto mt-5">
+      <div className="flex flex-wrap">
+        {skills.map((skill) => {
+          return (
+            <SkillCard
+              skillName={skill.skillName}
+              skillIcon={skill.skillIcon}
+              key={skill.skillName}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 }
