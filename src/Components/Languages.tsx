@@ -7,6 +7,7 @@ interface Language {
   certification: string;
   icon?: string;
   issuer?: string;
+  grade?: string;
 }
 interface LanguagesProps {
   languages: Language[];
@@ -30,6 +31,11 @@ const Projects = ({ languages }: LanguagesProps) => {
             <p className="text-gray-800 dark:text-gray-300">
               {language.description}
             </p>
+            {language?.grade && (
+              <p className="text-gray-800 dark:text-gray-300">
+                Grade: {language.grade}
+              </p>
+            )}
             <p className="text-gray-800 dark:text-gray-300">
               Proficiency: {language.proficiency}
             </p>

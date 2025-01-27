@@ -19,6 +19,7 @@ interface IData {
     github: string;
     linkedin: string;
     email: string;
+    europass?: string;
   };
   about: {
     title: string;
@@ -40,6 +41,7 @@ interface IData {
     description: string;
     proficiency: string;
     certification: string;
+    grade?: string;
     issuer?: string;
     icon?: string;
   }[];
@@ -52,6 +54,8 @@ const data: IData = {
     github: "https://github.com/merrillkoshy",
     linkedin: "https://www.linkedin.com/in/merrill-koshy-thomas/",
     email: "mailto:merrillkoshy@gmail.com",
+    europass:
+      "https://europa.eu/europass/eportfolio/api/eprofile/shared-profile/merrill+koshy-thomas/6f7fb7f7-319c-4694-aa56-5d97086bb862?view=html",
   },
   about: {
     title: "My Background",
@@ -357,18 +361,21 @@ const data: IData = {
   languages: [
     {
       name: "English",
-      description: "CEFR C1 : IELTS 7.5",
-      proficiency: "Full Professional Proficiency",
+      description: "CEFR C1",
+      proficiency: "Professional",
       certification: "/certificates/IELTS_CEFR_C1.pdf",
-      issuer: "IDP",
+      issuer: "IDP - IELTS",
+      grade: "7.5",
       icon: "🇬🇧",
     },
     {
       name: "Deutsch",
       description: "CEFR A1",
       proficiency: "Basic",
-      certification: "/certificates/254b247311b3c58caa83790722f1d148.pdf",
-      issuer: "Busuu",
+      certification:
+        "/certificates/GoetheZertifikatA1StartDeutsch-redacted.pdf",
+      issuer: "Goethe Institut",
+      grade: "sehr gut",
       icon: "🇩🇪",
     },
     {
