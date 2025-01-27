@@ -1,4 +1,5 @@
 import { FaGithub, FaLinkedin, FaRegEnvelope } from "react-icons/fa";
+import { FaEarthEurope } from "react-icons/fa6";
 import ReactTypingEffect from "react-typing-effect";
 import profile from "../../assets/profile.png";
 
@@ -8,10 +9,14 @@ interface CardProps {
     github: string;
     linkedin: string;
     email: string;
+    europass?: string;
   };
 }
 
-function Card({ name, social: { github, linkedin, email } }: CardProps) {
+function Card({
+  name,
+  social: { github, linkedin, email, europass },
+}: CardProps) {
   const saveAs = () => {
     const pdfUrl = "/Merrill-FS-developer.pdf";
     const link = document.createElement("a");
@@ -63,6 +68,7 @@ function Card({ name, social: { github, linkedin, email } }: CardProps) {
               <a
                 className="text-xl m-1 p-1 sm:m-2 sm:p-2 text-gray-800 hover:bg-gray-800 rounded-full hover:text-white transition-colors duration-300 dark:text-white dark:hover:bg-white dark:hover:text-gray-800"
                 href={github}
+                target="_blank"
               >
                 <FaGithub />
                 <span className="sr-only">Github</span>
@@ -70,14 +76,24 @@ function Card({ name, social: { github, linkedin, email } }: CardProps) {
               <a
                 className="text-xl m-1 p-1 sm:m-2 sm:p-2 text-linkedin-50 hover:bg-linkedin-500 rounded-full hover:text-white transition-colors duration-300"
                 href={linkedin}
+                target="_blank"
               >
                 <FaLinkedin />
                 <span className="sr-only">Linkedin</span>
+              </a>
+              <a
+                className="text-xl m-1 p-1 sm:m-2 sm:p-2 text-linkedin-50 hover:bg-linkedin-500 rounded-full hover:text-white transition-colors duration-300"
+                href={europass}
+                target="_blank"
+              >
+                <FaEarthEurope />
+                <span className="sr-only">Europass</span>
               </a>
 
               <a
                 className="text-xl m-1 p-1 sm:m-2 sm:p-2 text-gmail-50 hover:bg-gmail-500 rounded-full hover:text-white transition-colors duration-300"
                 href={email}
+                target="_blank"
               >
                 <FaRegEnvelope />
                 <span className="sr-only">Email</span>
