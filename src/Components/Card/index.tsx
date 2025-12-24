@@ -18,7 +18,7 @@ function Card({
   social: { github, linkedin, email, europass },
 }: CardProps) {
   const saveAs = () => {
-    const pdfUrl = "/Merrill-FS-developer.pdf";
+    const pdfUrl = "/Merrill-fullstack-js.pdf";
     const link = document.createElement("a");
     link.href = pdfUrl;
     link.download = "Merrill-FS-developer.pdf"; // specify the filename
